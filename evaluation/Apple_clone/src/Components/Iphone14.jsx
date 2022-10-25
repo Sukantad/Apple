@@ -16,7 +16,7 @@ function Iphone14() {
                 <Box w='30%' pt='30px' m='auto' textAlign={'center'}>
                     <Text color={'black'} fontSize='5xl' fontWeight={'600'} > iPhone 14 </Text>
                     <Text color={'black'} fontSize='3xl' fontWeight={'400'}> Big and Bigger.</Text>
-                    <Box pt='12px' alignItems={'center'} color={'#3485D6'} fontWeight='500' fontSize={'21px'} w='250px' m='auto' display={'flex'} textAlign='center' justifyContent='space-between'>
+                    <Box pt='12px' alignItems={'center'} color={'#3485D6'} fontWeight='500' fontSize={'21px'} w='250px' m='auto' display={'flex'} textAlign='center' justifyContent='space-around'>
                         <Flex _hover={{ textDecoration: 'underLine' }} alignItems={'center'} justifyContent='center'> Learn more <RiArrowRightSLine /> </Flex>
                         <Flex _hover={{ textDecoration: 'underLine' }} alignItems={'center'} justifyContent='center'> Buy <RiArrowRightSLine /> </Flex>
                     </Box>

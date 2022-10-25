@@ -21,7 +21,7 @@ function Landing() {
                     <Text color={'#1D1D1F'} fontSize='6xl' fontWeight={'500'}> iPad</Text>
                     <Text fontSize='2xl' color={'#1D1D1F'}> Lovable. Drawable. Magical.</Text>
                     <Text pt='10px' color={'#6E6E73'} fontWeight='400' fontSize={'21px'}> Available starting 10.26</Text>
-                    <Box alignItems={'center'} color={'#3485D6'} fontWeight='500' fontSize={'21px'} w='290px' m='auto' display={'flex'} textAlign='center' justifyContent='space-between'> <Flex _hover={{ textDecoration: 'underLine' }} alignItems={'center'}> Learn more <RiArrowRightSLine /> </Flex> <Text _hover={{ textDecoration: 'underLine' }} display={'flex'} alignItems='center' > Order now <RiArrowRightSLine /> </Text></Box>
+                    <Box alignItems={'center'} color={'#3485D6'} fontWeight='500' fontSize={'21px'} w='290px' m='auto' display={'flex'} textAlign='center' justifyContent='space-around'> <Flex _hover={{ textDecoration: 'underLine' }} alignItems={'center'}> Learn more <RiArrowRightSLine /> </Flex> <Text _hover={{ textDecoration: 'underLine' }} display={'flex'} alignItems='center' > Order now <RiArrowRightSLine /> </Text></Box>
                 </Box>
             </Box>
 
