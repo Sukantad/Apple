@@ -7,7 +7,6 @@ import Iphone14 from "./Components/Iphone14";
 import Landing from "./Components/Landing";
 import Navbar from "./Components/Navbar";
 import Particle from "./Components/Particle";
-import Store from "./Components/Store";
 
 function App() {
   return (

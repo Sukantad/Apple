@@ -10,9 +10,10 @@ export const getCategory=(data)=>({
     payload:data,
 })
 export const getCategoryError=()=>({ 
-    
         type:GET_ERROR
-    
+})
+export const SearchBar=()=>({
+  type:SEARCHBAR ,
 })
 
 export const FetchCategory=()=>(dispatch)=>{
@@ -22,6 +23,5 @@ fetch('http://localhost:4000/Category')
 .then((res)=>dispatch(getCategory(res)))
 .catch(()=>dispatch(getCategoryError()))
 }
-export const SearchBar=()=>({
-  type:SEARCHBAR  
-})
+
+

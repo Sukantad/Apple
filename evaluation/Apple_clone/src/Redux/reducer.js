@@ -4,7 +4,8 @@ const initState={
     loading:false,
     error:false,
     Search:false,
-    Category:[]
+    Category:[],
+    
 }
 const CategoryReducer=(state=initState, {type,payload})=>{
 switch(type){
@@ -24,7 +25,9 @@ switch(type){
     }
     case SEARCHBAR:{
         return {
-            ...state, Search:!state.Search,
+             ...state, Search:!state.Search,
+            // ...state, Search:payload.data
+
         }
     }
     case GET_ERROR:{

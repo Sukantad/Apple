@@ -4,14 +4,14 @@ import { BsApple ,BsBag} from 'react-icons/bs';
 import { BiSearch } from 'react-icons/bi';
 import { useDispatch, useSelector } from 'react-redux';
 import { SearchBar } from '../Redux/action';
-import SearchNavbar from './SearchNavbar';
+import SearchNavbar from './Home Page/SearchNavbar';
 
 function Navbar() {
   const {Search}=useSelector((state)=>state.CategoryState);
-console.log(Search)
+console.log(Search,'search')
   const dispatch=useDispatch();
   const Change=()=>{
-    dispatch(SearchBar())
+    dispatch(SearchBar(true))
   }
  
     return (
