@@ -26,8 +26,8 @@ function Category() {
               
               Category.map((ele)=>(
                 <Box > 
-             <Img w='170px' src={ele.image} alt='ele.id'/>
-          <Text> {ele.title} </Text>  </Box>
+             <Img w='140px' src={ele.image} alt='ele.id'/>
+          <Text pt='10px'> {ele.title} </Text>  </Box>
             ))
             }</Box>
            

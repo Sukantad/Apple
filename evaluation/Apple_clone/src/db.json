@@ -32,15 +32,12 @@
     },{
         "image":"https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-accessories-nav-202209?wid=200&hei=130&fmt=png-alpha&.v=1660677092974",
         "title":"Accessories"
-    },{
-        "image":"https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-holiday-giftcards-asit-agc-nav-202111?wid=200&hei=130&fmt=png-alpha&.v=1653339351054",
-        "title":"Apple Gift Card"
     }
  ],
   "phones"  :[
     {
       "name": "iPhone X",
-      "url": "https://www.apple.com/dk/shop/buy-iphone/iphone-x",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-iphone-14-202209?wid=400&hei=500&fmt=jpeg&qlt=95&.v=1661890731783",
       "variants": [
         {
           "name": "sølv",
@@ -63,7 +60,7 @@
   
     {
       "name": "iPhone 8 Plus",
-      "url": "https://www.apple.com/dk/shop/buy-iphone/iphone-8#01",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-ipad-202210?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1664628458682",
       "variants": [
         {
           "name": "sølv",
@@ -92,7 +89,7 @@
     },
     {
       "name": "iPhone 8",
-      "url": "https://www.apple.com/dk/shop/buy-iphone/iphone-8#00",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-watch-s8-202209_GEO_IN?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1661792340440",
       "variants": [
         {
           "name": "sølv",
@@ -121,7 +118,7 @@
     },
     {
       "name": "iPhone 7 Plus",
-      "url": "https://www.apple.com/dk/shop/buy-iphone/iphone-7#01",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-ipad-pro-202210_GEO_IN?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1665114493565",
       "variants": [
         {
           "name": "Jetsort2",

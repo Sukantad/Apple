@@ -10,9 +10,9 @@ function GridProduct() {
                 <GridItem
                     backgroundImage="url('https://www.apple.com/v/home/at/images/promos/apple-watch-ultra/promo_apple_watch_ultra__gnsqulvdc4a6_large_2x.jpg')"
                     backgroundRepeat={"no-repeat"}
-                    backgroundSize="160%"
+                    backgroundSize="175%"
                     backgroundPosition='left 50%  center'
-                    h='80vh'
+                    h='90vh'
                     w='100%'
                 >
                     <Box w='50%' m='auto'>
@@ -33,12 +33,13 @@ function GridProduct() {
                 </GridItem>
                 <GridItem backgroundImage="url('https://www.apple.com/v/home/at/images/promos/apple-watch-series-8/promo_apple_watch_series_8__ch7rexplmihe_large_2x.jpg')"
                     backgroundRepeat={"no-repeat"}
-                    backgroundSize="150%"
+                    backgroundSize="170%"
                     backgroundPosition='bottom 10%  center'
-                    h='80vh'
+                    h='90vh'
                     w='100%'
 
                 >
+                    <Box > 
                     <Box p='12px' display={'flex'} justifyContent='center' alignItems={'center'} bg='black' color='white' >
 
                         <BsApple size={'30px'} /> <Text fontWeight={'bold'} fontSize={'32px'}>WATCH </Text>
@@ -51,7 +52,7 @@ function GridProduct() {
                     <Box pt='12px' alignItems={'center'} color={'#3485D6'} fontWeight='400' fontSize={'18px'} w='220px' m='auto' display={'flex'} textAlign='center' justifyContent='space-around'>
                         <Flex _hover={{ textDecoration: 'underLine' }} alignItems={'center'} justifyContent='center'> Learn more <RiArrowRightSLine /> </Flex>
                         <Flex _hover={{ textDecoration: 'underLine' }} alignItems={'center'} justifyContent='center'> Buy <RiArrowRightSLine /> </Flex>
-                    </Box>
+                    </Box> </Box>
 
                 </GridItem>
                 <GridItem backgroundImage="url('https://www.apple.com/v/home/at/images/promos/ipad-pro/promo_ipadpro_order__upw04aj7i2qe_large_2x.jpg')"
