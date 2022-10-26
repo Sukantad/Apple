@@ -3,7 +3,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { FetchCategory } from '../Redux/action';
+import { Link } from 'react-router-dom';
+import { FetchCategory } from '../../Redux/action';
 
 function Category() {
     // const [data,setData]=useState([]);
@@ -26,7 +27,7 @@ function Category() {
               Category.map((ele)=>(
                 <Box > 
              <Img w='170px' src={ele.image} alt='ele.id'/>
-             <Text> {ele.title} </Text></Box>
+          <Text> {ele.title} </Text>  </Box>
             ))
             }</Box>
            
