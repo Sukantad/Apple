@@ -310,5 +310,52 @@
       "memory": [{ "ram": "32", "price": 3099 }, { "ram": "128", "price": 3999 }],
       "updated": "2017-09-13T06:42:24.296Z"
     }
+  ],
+  "slider"  :[
+    {
+      "name": "IPHONE 14",
+      "heading":"Big and bigger.",
+      "price":"79900.00",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-iphone-14-202209?wid=400&hei=500&fmt=jpeg&qlt=95&.v=1661890731783",
+          
+      "memory": [{ "ram": "64", "price": 8899 }, { "ram": "256", "price": 10249 }],
+      "updated": "2017-09-13T06:55:52.309Z"
+    },
+  
+    {
+      "name": "IPAD",
+      "heading":"The all-new colorful ipad for hte things you do every day",
+      "price":"77900.00",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-ipad-202210?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1664628458682",
+      "memory": [{ "ram": "64", "price": 7099 }, { "ram": "256", "price": 8449 }],
+      "updated": "2017-09-13T06:55:05.200Z"
+    },
+    {
+      "name": "APPLE TV 4K",
+      "heading":"The Apple experience. Cinematic in every sense.",
+      "price":"14900.00",
+
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-appletv-202210?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1664628458702",
+      "memory": [{ "ram": "64", "price": 6199 }, { "ram": "256", "price": 7549 }],
+      "updated": "2017-09-13T06:46:16.085Z"
+    },
+    {
+      "name": "APPLE WATCH ULTRA",
+      "heading":"Adventure awaits.",
+      "price":"89900.00",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-watch-ultra-202209_GEO_IN?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1661382550267",
+      
+      "memory": [{ "ram": "32", "price": 5999 }, { "ram": "128", "price": 6899 }],
+      "updated": "2017-09-13T06:45:52.446Z"
+    },
+    {
+      "name": "APPLE WATCH SE",
+      "heading":"A great deal to love.",
+      "price":"29900.00",
+      "url": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-watch-se-202209_GEO_IN?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1663863097690",
+      
+      "memory": [{ "ram": "32", "price": 4899 }, { "ram": "128", "price": 5799 }],
+      "updated": "2017-09-13T06:45:36.351Z"
+    }
   ]
 }

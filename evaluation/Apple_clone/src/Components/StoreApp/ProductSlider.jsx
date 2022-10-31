@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import './bannerStyle.css';
+import './pd.css'
 import { GrFormNext, GrPrevious, GrFormPrevious } from 'react-icons/gr';
 import Slider from "react-slick";
 import { Img, Box, Text } from '@chakra-ui/react';
@@ -14,16 +14,16 @@ function ProductSlider() {
     const PreviousBtn = (props) => {
         const { className, onClick } = props;
         return (
-            <div className={className} onClick={onClick}>
-                <h1 style={{ color: "black", fontSize: "45px" }}> <GrFormPrevious /> </h1>
-            </div>
+            <Box className={className} onClick={onClick} >
+                <GrFormPrevious size={'50px'} color='#D6D6D6' />
+            </Box>
         );
     };
     const NextBtn = (props) => {
         const { className, onClick } = props;
         return (
             <Box className={className} onClick={onClick} display="none">
-                <h1 style={{ fontWeight: "bolder", fontSize: "45px" }}> <GrFormNext />  </h1>
+                <GrFormNext size={'50px'} color='red' />
             </Box>
 
         );
@@ -34,8 +34,8 @@ function ProductSlider() {
         nextArrow: <NextBtn />,
         infinite: false,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 3.5,
+        slidesToScroll: 1,
 
         responsive: [
             {
@@ -65,7 +65,7 @@ function ProductSlider() {
     };
     const getFashion = () => {
         setLoading(true)
-        fetch("http://localhost:4000/phones")
+        fetch("http://localhost:4000/slider")
             .then(res => res.json())
             .then(res => setBestselling(res))
             .catch(err => setError(true))
@@ -74,31 +74,43 @@ function ProductSlider() {
     useEffect(() => {
         getFashion();
     }, [])
+    console.log(bestselling)
     return (
 
         <div>
-            <Box w={{ base: '80%', md: '75%', lg: '84%' }} m="auto" className="OffSlider">
-                <Slider {...settings}>
+            <Box p='50px 180px' >
+                <Box color={'silver'} fontSize={'28px'} textAlign='center' display='flex' fontWeight={'700'}>
+                    <Text color={'#6E6E73'}> <span style={{ color: 'black' }}> The latest.</span>Take a look at what’s new right now.
+                    </Text>
+                </Box>
+            </Box>
+            <Box w={{ base: '80%', md: '75%', lg: '98%' }} m="auto" className="OffSlider"  >
+                <Slider {...settings}
+                
+                >
+
                     {bestselling.map(item =>
-                        // <NavLink to={`/products/view/${item.item_id}`}>
-                        <Box
-                            // style={{
-                            //     backgroundImage: "url('https://www.apple.com/v/home/at/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_medium_2x.jpg')"
-                            // }}                      
-                             backgroundImage="url('https://www.apple.com/v/home/at/images/heroes/iphone-14-pro/hero_iphone14pro__e5xbgo5ffhg2_medium_2x.jpg')"
+                        <Box key={Math.random()}>
+                            <Box className='Card'
+                              _hover={{border:'2px solid white'}}
+                                backgroundImage={item.url}
+                                backgroundRepeat={"no-repeat"}
+                                backgroundSize="110%"
+                                backgroundPosition='bottom 10%  center'
+                                h='75vh'
+                                w='95%'
+                                m='15px'
+                                shadow={'2xl'}
+                                borderRadius='22px'
+                                 >
+                                <Box pt='20px' p='15px'>
+                                 <Text fontWeight={'500'} color={'#8E8E92'} fontSize='12px'> {item.name}</Text> 
+                                 <Text fontSize={'28px'} lineHeight='120%' fontWeight='semibold'> {item.heading}</Text>
+                                 {/* <Text pt='7px' sx={{'.Card:hover &':{border:'1px solid red'}} }>From ₹  {item.price} ‡</Text> </Box> */}
+                                 <Text pt='7px' sx={{'.Card:hover &':{border:'1px solid red'}} }>From ₹  {item.price} ‡</Text> </Box>
 
-                            backgroundRepeat={"no-repeat"}
-                            backgroundSize="100%"
-                            backgroundPosition='bottom 10%  center'
-                            h='100vh'
-                            w='100%'
-                            m="5px" key={Math.random()} alignItems="center" textAlign={"center"} >
-                            {/* <Img maxWidth="190px" h="240px" m="auto" _hover={{ transform: "scale(1.1)", transition: "400ms" }} p="10px" src={item.url} alt="" /> */}
-                            <Text p="5px" fontWeight="500" fontSize={{ base: "13px", md: "12px", lg: "14px" }}> {item.description}</Text>
-
-                            <Text pb="16px" fontWeight={"medium"} color={"green"} mt="8px" fontSize={{ base: "13px", md: "14px", lg: "15px" }}> From  ₹  {item.new_price} </Text>
-                        </Box>
-                        // </NavLink>
+                            
+                            </Box> </Box>
                     )}
 
                 </Slider>

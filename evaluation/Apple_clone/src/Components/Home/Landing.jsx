@@ -10,11 +10,12 @@ function Landing() {
             <Box
                 backgroundImage="url('https://www.apple.com/v/home/at/images/heroes/ipad/hero_ipad_order__752kv3kpn2qi_small_2x.jpg')"
                 backgroundRepeat={"no-repeat"}
-                backgroundSize="110%"
+                backgroundSize="105%"
                 backgroundPosition='top 100%  center'
                 h='100vh'
                 w='100%'
                 color={'black'}
+               
             >
 
                 <Box w='80%' textAlign={'center'} pt='200px' pl='400px' m='auto' >

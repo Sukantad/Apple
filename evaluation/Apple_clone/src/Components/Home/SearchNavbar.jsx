@@ -69,7 +69,7 @@ function SearchNavbar() {
 
     return (
         <div>
-            <Flex bg='#1A1A1A' h='50px'>
+            <Flex bg='#1A1A1A' h='50px' pos='fixed' w='100%'>
                 <Flex alignItems={'center'} w='50%' m='auto'>
                     <BiSearch size={'18px'} color='#67676C' />
                     <Input ref={ref} id='inputBox' onChange={handleinput} pl='10px' _placeholder={{ color: '#67676C' }} color='white' fontSize={'18px'}
@@ -79,14 +79,18 @@ function SearchNavbar() {
             </Flex>
 
             {
-                hiddenDiv ? <Box border={'1px solid silver'} w='50%' h='30vh' bg='white' shadow={'2xl'} borderRadius={"0px 0px 20px 20px"} m='auto' position={'absolute'} left='25%'>
-                    {/* {
+                hiddenDiv ? <Box border={'1px solid silver'} w='50%' h='30vh' bg='white' shadow={'2xl'} borderRadius={"0px 0px 20px 20px"} m='auto' position={'absolute'} left='25%' top='50px'>
+                    {
+                        RecomendationArray.length!=""?
                         RecomendationArray.map((e)=>(
-                           <Box>  <Img src={e.url}/>
+                           <Box display={'flex'} justifyContent="space-around">  
+                           {/* <Img src={e.url}/> */}
                          <Text> {e.name} </Text> </Box>
+
                         ))
+                        :<Box> <Img w='50%' m='auto' src='https://www.itinerantnotes.com/blog-theme/images/empty.gif'/></Box>
                     }
-                     */}
+                    
                      </Box> : ""
             }
 

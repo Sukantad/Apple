@@ -12,7 +12,7 @@ function StorePage() {
             <ShortOffer/>
             <TopPart/>
              <Category/>
-             {/* <ProductSlider/> */}
+             <ProductSlider/>
              <CeoPage/>
         </Box>
     );

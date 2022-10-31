@@ -20,7 +20,7 @@ function Navbar() {
       {
         Search ? <SearchNavbar /> :
 
-          <Flex zIndex={1} fontSize={'13px'} bg='#323232' h='50px' w='100%' color={'#AEAEAE'} p='0px 190px' justifyContent={'space-between'} alignItems={'center'}>
+          <Flex zIndex={1} fontSize={'13px'} bg='#323232' h='50px' w='100%' color={'#AEAEAE'} p='0px 190px' justifyContent={'space-between'} alignItems={'center'} pos='fixed'>
             <Link to='/' >   <BsApple size={'15px'} color='#D6D6D6' /></Link>
             <Link to={'/store'}>   <Text _hover={{ color: "white" }}> Store </Text> </Link>
             <Text> Mac</Text>
